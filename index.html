@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+
+    <h1>M&JP Conversor de Moedas</h1>
+
+    <h2>Converta real para dólar:</h2>
+
+    <script>
+        function convertervalor(){
+            const real = document.getElementById('real').value;
+            const dólar = document.getElementById('dólar').value;
+            const Valor = real / (dólar == 0.20);
+
+            document.getElementById('resultado').textContent = Valor;
+        }
+    </script>
+
+    
+</body>
+
+<footer>João P B Gutterres e Marcos Vinícios | Desenvolvimento Web 2024 IOS</footer>
+</html>

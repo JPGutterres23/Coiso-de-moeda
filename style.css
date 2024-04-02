@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    text-align: center;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: darkred;
+}
+
+.toggle-btn:checked + .toggle-label {
+    background-color: darkred;
+}
+
+.toggle-btn:checked + .toggle-label::before {
+    background-color: rgb(51, 0, 0);
+    transform: translateX(30px);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode {
+    background-color: black;
+}
